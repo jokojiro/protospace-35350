@@ -50,7 +50,7 @@
             <% if @comments %>
               <% @comments.each do |comment| %>
                 <%= comment.text%>
-                <%= link_to comment.user.name, user_path, class: :comment_user %>
+                <%= link_to comment.user.name, user_path(@prototype.user_id), class: :comment_user %>
               <% end %>
             </li>
             <% end%>
